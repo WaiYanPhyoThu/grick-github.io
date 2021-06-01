@@ -1,0 +1,144 @@
+/*globals*/
+.font-os{
+	font-family: 'Open Sans', sans-serif;
+}
+.font-rb{
+	font-family: 'Roboto Slab', serif;
+}
+.font-size-13{
+	font-size: 13px;
+}
+.font-size-16{
+	font-size: 16px;
+}
+.bg-blue{
+	background: #1768c4;
+}
+.text-blue{
+	color: #1768c4;
+}
+.bg-lightblue{
+	background: #1673dd;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+/*top navbar section*/
+#top-navbar{
+	border-bottom: 2px solid #1768c4;
+}
+#top-navbar input{
+	border-radius: 20px 0 0 20px;
+	border: 1px solid #1768c4;
+}
+#top-navbar .input-group-text{
+	border-radius: 0 20px 20px 0;
+	border: 1px solid #1768c4;
+}
+
+#top-navbar .fa-times,
+#top-navbar .fa-bars{
+	cursor: pointer;
+	display: none;
+}
+
+/*#sidebar-slider section*/
+#sidebar-slider .menu .nav-link:hover{
+	color: #ff9c2a;
+}
+
+/*feature-products section*/
+#feature-products .col-md-4{
+	overflow: hidden;
+}
+#feature-products img:hover{
+	transform: scale(1.2);
+	transition: transform 1.5s ease;
+}
+#feature-products h5,
+#on-sales h5,
+#new-arrivals h5,
+#similar-prd h5{
+	color: white;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+#feature-products h5::after,
+#on-sales h5::after,
+#new-arrivals h5::after,
+#similar-prd h5::after{
+	content: "";
+	border-top: 50px solid #3399e5;
+	border-right: 50px solid transparent;
+	position: absolute;
+	margin-left: 32px;
+}
+
+/*on-sales-products section*/
+#on-sales h5::after{
+	margin-left: 34px;
+}
+
+.overlay{
+	display: block;
+	position: absolute;
+	top: 5%;
+	width: 70px;
+	margin-left: 0;
+	opacity: 0;
+}
+.overlay .fa,
+.overlay .far{
+	cursor: pointer;
+	background: ##1768c4;
+	color: #000;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+	margin-bottom: 5%;
+}
+.overlay .btn-secondary{
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+.prd-top:hover .overlay{
+	opacity: 1;
+	margin-left: 10px;
+	transition: .5s;
+}
+.overlay .fa:hover,
+.overlay .far:hover{
+	color: #e35300;
+}
+
+/*new-arrivals-products section*/
+#new-arrivals h5::after{
+	margin-left: 22px;
+}
+
+@media screen and (max-width: 768px){
+    #top-navbar .fa-bars{
+    	display: block;
+    }
+    #sidebar-slider .col-md-2{
+        display: none;
+    }
+}
+/*statistics section*/
+.card-common{
+	box-shadow: 1px 2px 5px #999;
+	transition: all .4s;
+}
+.card-common:hover{
+	box-shadow: 2px 3px 15px #999;
+	transform: translateY(-1px);
+}
+.task-border{
+	border-left: 3px solid #F66436;
+}
